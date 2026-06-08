@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYC Divorce Lawyer | Free Consultation | Aronov Law NY P.C.</title>
+<meta name="description" content="Aggressive Queens & NY divorce attorneys. Contested & uncontested. 1,000+ cases won. Free confidential consultation — (718) 206-1555.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#004AAD;--navy-deep:#00337A;--navy-ink:#0A2342;
+    --gold:#EDBF51;--gold-warm:#DCA82C;--gold-ink:#8A6A1E;
+    --paper:#FBF8F2;--cream:#F4EFE6;--sand:#EDE6D8;
+    --sage:#E7EEE9;--slate:#5C6678;
+    --line:rgba(10,35,66,.12);--hair:rgba(10,35,66,.16);
+    --shadow-soft:0 20px 50px -28px rgba(10,35,66,.30);
+    --shadow-card:0 2px 4px rgba(10,35,66,.04),0 12px 28px -18px rgba(10,35,66,.22);
+    --display:'Fraunces',Georgia,serif;
+    --body:'Inter',system-ui,sans-serif;
+    --r:22px;--r-sm:14px;--maxw:1120px;
+    /* unified spacing scale */
+    --space-section:88px;
+    --space-section-sm:56px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--navy-ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+
+  /* SKIP LINK */
+  .skip-link{position:absolute;left:16px;top:12px;z-index:200;background:var(--navy);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;transform:translateY(-150%);transition:transform .2s}
+  .skip-link:focus{transform:translateY(0);outline:3px solid var(--gold)}
+
+  :focus-visible{outline:3px solid var(--navy);outline-offset:2px;border-radius:4px}
+  main:focus{outline:none}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:600;font-size:1.05rem;padding:16px 30px;border-radius:12px;border:none;cursor:pointer;transition:transform .16s,background .16s;line-height:1.15;text-align:center}
+  .btn-gold{background:var(--gold);color:var(--navy-ink)}
+  .btn-gold:hover{background:var(--gold-warm);transform:translateY(-2px)}
+  .btn-soft{background:#fff;color:var(--navy-ink);border:1.5px solid var(--line)}
+  .btn-soft:hover{border-color:var(--navy);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-block{display:flex;width:100%}
+
+  /* HEADER */
+  .site-header{position:sticky;top:0;z-index:60;background:rgba(251,248,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+  .site-header.scrolled{box-shadow:0 8px 30px -16px rgba(10,35,66,.2)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 26px;max-width:var(--maxw);margin:0 auto}
+  .logo-img{height:46px;width:auto}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-phone{font-weight:600;color:var(--navy);font-size:1.05rem;display:flex;align-items:center;gap:7px;white-space:nowrap}
+  .nav-phone svg{width:18px;height:18px;flex-shrink:0}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;padding:72px 0 80px}
+  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:
+      radial-gradient(1000px 560px at 80% -15%,rgba(231,238,233,.10),transparent 60%),
+      linear-gradient(165deg,rgba(10,35,66,.93) 0%,rgba(0,74,173,.88) 60%,rgba(0,51,122,.93) 100%)}
+  .hero::after{content:"";position:absolute;bottom:-44%;left:-22%;width:680px;height:680px;background:radial-gradient(circle,rgba(237,191,81,.12),transparent 64%);pointer-events:none;z-index:1}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:start}
+  .hero-copy{padding-top:8px;color:#fff}
+  .pill{display:inline-flex;align-items:center;gap:14px;color:var(--gold);font-weight:600;font-size:.8rem;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:24px}
+  .pill .dot{width:34px;height:2px;border-radius:0;background:var(--gold);flex-shrink:0}
+  .hero h1{font-family:var(--display);font-weight:500;font-size:clamp(2.7rem,5.4vw,4.2rem);line-height:1.05;letter-spacing:-1px;margin-bottom:20px;color:#fff}
+  .hero h1 em{font-style:italic;color:var(--gold);font-weight:600}
+  .hero .sub{font-size:1.18rem;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px}
+  .hero .sub b{color:#fff;font-weight:600}
+
+  /* STAT BAND */
+  .statband{display:flex;max-width:500px;margin-bottom:30px;border-top:1.5px solid rgba(255,255,255,.22);border-bottom:1.5px solid rgba(255,255,255,.22);list-style:none}
+  .stat-i{flex:1;padding:18px 18px 18px 0}
+  .stat-i + .stat-i{padding-left:22px;border-left:1.5px solid rgba(255,255,255,.22)}
+  .stat-i .v{font-family:var(--display);font-weight:600;font-size:1.95rem;line-height:.95;letter-spacing:-.5px;color:#fff}
+  .stat-i .v sup{color:var(--gold);font-size:1rem;font-weight:600;top:-.7em}
+  .stat-i .v .star{color:var(--gold);font-size:1.3rem}
+  .stat-i .k{font-size:.82rem;color:rgba(255,255,255,.72);margin-top:6px;letter-spacing:.2px}
+
+  .hero-ctas{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+  .hero .btn-soft{background:#fff;color:var(--navy-ink);border:1.5px solid #fff}
+  .hero .btn-soft:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-ink)}
+
+  /* TRUST STRIP */
+  .trust{background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.08);padding:22px 0}
+  .trust .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px 44px}
+  .trust .trust-label{color:rgba(255,255,255,.6);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
+  .trust .trust-logos{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:32px}
+  .trust .trust-logos img{height:52px;width:auto;opacity:.85;transition:opacity .2s}
+  .trust .trust-logos img:hover{opacity:1}
+  @media(max-width:640px){.trust .trust-logos{gap:24px}.trust .trust-logos img{height:40px}}
+  .tp{display:flex;align-items:center;gap:9px;margin-top:22px;font-size:.9rem;color:rgba(255,255,255,.8)}
+  .tp .stars{color:var(--gold);letter-spacing:1px;font-size:1.05rem}
+  .tp b{color:#fff}
+
+  /* FORM CARD */
+  .ask{background:#fff;border-radius:var(--r);padding:30px;box-shadow:var(--shadow-soft);border:1px solid var(--line);position:relative;scroll-margin-top:90px}
+  .ask::before{content:"";position:absolute;top:0;left:30px;right:30px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-warm));border-radius:0 0 3px 3px}
+  .ask-legend{display:block;width:100%;padding:0;border:0}
+  .ask-legend b{font-family:var(--display);font-size:1.4rem;font-weight:600;display:block;color:var(--navy-ink)}
+  .ask-legend small{display:block;color:var(--slate);font-size:.84rem;margin-top:2px;font-weight:400}
+  .ask p.lead-q{color:var(--slate);font-size:.95rem;margin:12px 0 16px}
+  .ask p.req-note{font-size:.76rem;color:var(--slate);margin-bottom:16px}
+  .ask p.req-note .star{color:var(--gold-ink)}
+  .field{margin-bottom:14px;border:0;padding:0}
+  .field label{display:block;font-size:.82rem;font-weight:600;color:var(--navy-ink);margin-bottom:6px}
+  .field label .star{color:var(--gold-ink)}
+  .field input,.field select{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;font-family:var(--body);font-size:1rem;color:var(--navy-ink);background:var(--paper);transition:border .15s,box-shadow .15s}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(0,74,173,.1);background:#fff}
+  .field input[aria-invalid="true"],.field select[aria-invalid="true"]{border-color:#C0392B}
+  .field .hint{font-size:.74rem;color:var(--slate);margin-top:4px}
+  .field .error{font-size:.78rem;color:#C0392B;margin-top:5px;font-weight:500}
+
+  /* CONSENT */
+  .consent-group{margin:18px 0 18px}
+  .consent{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+  .consent input[type=checkbox]{flex-shrink:0;width:18px;height:18px;margin-top:2px;accent-color:var(--navy);cursor:pointer}
+  .consent label{font-size:.72rem;line-height:1.5;color:var(--slate);cursor:pointer}
+
+  .ask-foot{margin-top:14px;font-size:.78rem;color:var(--slate);text-align:center;display:flex;align-items:center;justify-content:center;gap:6px}
+  .ask-foot svg{width:14px;height:14px;color:var(--navy);flex-shrink:0}
+  .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+  /* SECTIONS — unified spacing */
+  .block{padding:var(--space-section) 0}
+  .sec-head{max-width:640px;margin:0 0 48px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-tag{font-size:.74rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold-ink);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  .sec-head.center .sec-tag{justify-content:center}
+  .sec-tag::before{content:"";width:30px;height:1.5px;background:var(--gold-warm)}
+  .sec-head.center .sec-tag::after{content:"";width:30px;height:1.5px;background:var(--gold-warm)}
+  .sec-head h2{font-family:var(--display);font-weight:500;font-size:clamp(2.1rem,4vw,3rem);line-height:1.12;letter-spacing:-.5px;color:var(--navy-ink)}
+  .sec-head h2 em{font-style:italic;color:var(--navy);font-weight:600}
+
+  /* HOW WE HELP */
+  .help-list{border-top:1.5px solid var(--hair);list-style:none;counter-reset:help}
+  .help-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px;padding:26px 8px;border-bottom:1.5px solid var(--hair);transition:background .2s,padding .2s;position:relative;overflow:hidden}
+  .help-row::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .25s}
+  .help-row:hover,.help-row:focus-within{background:#fff;padding-left:22px}
+  .help-row:hover::after,.help-row:focus-within::after{transform:scaleY(1)}
+  .help-row .idx{counter-increment:help;font-family:var(--display);font-weight:500;font-size:1.5rem;font-style:italic;color:var(--gold-warm);min-width:46px}
+  .help-row .idx::before{content:"0" counter(help)}
+  .help-row .ttl{font-family:var(--display);font-weight:600;font-size:1.55rem;line-height:1.15;letter-spacing:-.3px;color:var(--navy-ink)}
+  .help-row .ttl span{display:block;font-family:var(--body);font-weight:400;font-size:.92rem;color:var(--slate);margin-top:5px;letter-spacing:0;line-height:1.5}
+  .help-row .go{font-family:var(--body);font-weight:600;font-size:.92rem;color:var(--navy);display:inline-flex;align-items:center;gap:7px;white-space:nowrap;opacity:.55;transition:opacity .2s,gap .2s}
+  .help-row:hover .go,.help-row:focus-within .go{opacity:1;gap:12px}
+  .help-row a.stretched::after{content:"";position:absolute;inset:0}
+
+  /* WHY */
+  .why{background:var(--navy-ink);color:#fff;overflow:hidden;position:relative}
+  .why::before{content:"";position:absolute;right:-12%;top:-30%;width:560px;height:560px;background:radial-gradient(circle,rgba(237,191,81,.14),transparent 64%);pointer-events:none}
+  .why .wrap{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+  .why .sec-tag{color:var(--gold)}
+  .why .sec-tag::before{background:var(--gold)}
+  .why h2{font-family:var(--display);font-weight:500;font-size:clamp(2.1rem,4vw,3rem);line-height:1.12;letter-spacing:-.5px;margin-bottom:18px}
+  .why h2 em{color:var(--gold);font-style:italic;font-weight:600}
+  .why .lede{color:rgba(255,255,255,.78);font-size:1.05rem;margin-bottom:28px}
+  .why-points{display:grid;grid-template-columns:1fr 1fr;gap:0;list-style:none}
+  .wp{padding:26px 24px;border-top:1px solid rgba(255,255,255,.16)}
+  .wp:nth-child(odd){padding-left:0}
+  .wp:nth-child(even){border-left:1px solid rgba(255,255,255,.16)}
+  .wp .n{font-family:var(--display);font-style:italic;font-weight:500;font-size:1.15rem;color:var(--gold);margin-bottom:8px}
+  .wp h3{font-family:var(--display);font-weight:600;font-size:1.28rem;margin-bottom:6px}
+  .wp p{color:rgba(255,255,255,.72);font-size:.94rem}
+
+  /* LOCALIZATION / NAP */
+  .local .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:stretch}
+  .map-embed{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:400px;background:var(--sand);box-shadow:var(--shadow-card)}
+  .map-embed iframe{width:100%;height:100%;min-height:400px;border:0;display:block;filter:saturate(.95)}
+  .nap{display:flex;flex-direction:column;justify-content:center}
+  .nap .sec-tag{margin-bottom:16px}
+  .nap h2{font-family:var(--display);font-weight:500;font-size:clamp(1.9rem,3.4vw,2.5rem);line-height:1.14;letter-spacing:-.4px;margin-bottom:10px}
+  .nap h2 em{font-style:italic;color:var(--navy);font-weight:600}
+  .nap .served{color:var(--slate);margin-bottom:26px}
+  .nap-rows{border-top:1.5px solid var(--hair);margin:0;font-style:normal}
+  .nap-row{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1.5px solid var(--hair)}
+  .nap-row .ic{flex:0 0 22px;color:var(--gold-warm);margin-top:3px}
+  .nap-row .ic svg{width:22px;height:22px}
+  .nap-row dt{font-size:.74rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:4px}
+  .nap-row dd{font-family:var(--display);font-weight:600;font-size:1.15rem;line-height:1.35;color:var(--navy-ink);margin:0}
+  .nap-row dd a:hover{color:var(--navy)}
+  .nap-row dd small{display:block;font-family:var(--body);font-weight:400;font-size:.88rem;color:var(--slate);margin-top:3px}
+  .nap-cta{margin-top:28px}
+
+  /* MEET THE TEAM */
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;list-style:none}
+  .member{position:relative;transition:transform .2s}
+  .member:hover{transform:translateY(-5px)}
+  .member .photo{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,var(--navy) 0%,var(--navy-ink) 100%);overflow:hidden;border-radius:var(--r)}
+  .member .photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+  /* monogram placeholder shown when no <img> is present */
+  .member .monogram{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-weight:600;font-size:3.4rem;color:var(--gold);letter-spacing:1px}
+  .member .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(transparent,rgba(10,35,66,.5));pointer-events:none}
+  .member .meta{padding:18px 2px 0}
+  .member .meta h3{font-family:var(--display);font-weight:600;font-size:1.4rem;line-height:1.15;color:var(--navy-ink);margin-bottom:4px}
+  .member .meta .role{font-size:.82rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-ink)}
+  .member .meta .bio{font-size:.92rem;color:var(--slate);margin-top:12px;line-height:1.55;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+
+  /* REVIEWS */
+  .tband{background:var(--cream)}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none}
+  .tcard{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--shadow-card);position:relative;height:100%}
+  .tcard .qmark{position:absolute;top:14px;right:24px;font-family:var(--display);font-size:3.4rem;color:var(--sand);line-height:1}
+  .tcard .stars{color:var(--gold);font-size:1.05rem;letter-spacing:2px;margin-bottom:12px;position:relative}
+  .tcard h3{font-family:var(--display);font-size:1.12rem;font-weight:600;margin-bottom:10px;position:relative;line-height:1.3}
+  .tcard blockquote{font-size:.98rem;color:var(--slate);margin:0 0 18px;position:relative;border:0;padding:0;font-style:normal;line-height:1.6}
+  .tcard figcaption{display:flex;align-items:center;gap:11px}
+  .tcard figcaption .av{width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-family:var(--display);font-weight:600;flex-shrink:0}
+  .tcard figcaption b{font-size:.92rem;color:var(--navy-ink)}
+  .tcard figcaption small{display:block;color:var(--slate);font-size:.76rem}
+  .review-link{display:inline-block;margin-top:36px;font-weight:600;color:var(--navy)}
+  .review-link-wrap{text-align:center}
+  .review-link:hover{color:var(--gold-ink)}
+
+  /* FINAL */
+  .final .inner{background:linear-gradient(150deg,var(--navy) 0%,var(--navy-ink) 100%);border-radius:32px;padding:64px 40px;text-align:center;color:#fff;position:relative;overflow:hidden}
+  .final .inner::before{content:"";position:absolute;top:-40%;right:-10%;width:520px;height:520px;background:radial-gradient(circle,rgba(237,191,81,.18),transparent 64%);pointer-events:none}
+  .final h2{font-family:var(--display);font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1.14;margin-bottom:26px;position:relative}
+  .final h2 em{color:var(--gold);font-style:italic;font-weight:600}
+  .final-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+  .final .reassure{margin-top:26px;font-size:.88rem;color:rgba(255,255,255,.72);display:flex;gap:22px;justify-content:center;flex-wrap:wrap;position:relative;list-style:none}
+  .final .reassure li::before{content:"✓ ";color:var(--gold);font-weight:700}
+
+  /* FOOTER */
+  .site-footer{background:var(--navy-ink);color:rgba(255,255,255,.7);padding:50px 0 28px;font-size:.9rem}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;margin-bottom:32px}
+  .foot-logo-img{height:54px;width:auto;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .foot-brand p{color:rgba(255,255,255,.7)}
+  .foot-contact{text-align:right;font-style:normal}
+  .foot-phone{font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--gold);display:inline-block;margin-bottom:6px}
+  .disclaimer{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:.72rem;line-height:1.6;color:rgba(255,255,255,.45)}
+  .disclaimer p + p{margin-top:10px}
+
+  /* STICKY MOBILE */
+  .sticky-mobile{position:fixed;bottom:0;left:0;right:0;z-index:80;display:none;box-shadow:0 -8px 30px -10px rgba(0,0,0,.4)}
+  .sticky-mobile a{flex:1;padding:16px;text-align:center;font-weight:600;font-size:1rem;display:flex;align-items:center;justify-content:center;gap:8px}
+  .sticky-mobile .s-call{background:var(--navy-ink);color:#fff}
+  .sticky-mobile .s-form{background:var(--gold);color:var(--navy-ink)}
+
+  /* ANIM */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+  .reveal.in{opacity:1;transform:none}
+  .hero .pill,.hero h1,.hero .sub,.hero .statband,.hero .hero-ctas,.hero .tp{opacity:0;animation:rise .8s ease forwards}
+  .hero .pill{animation-delay:.05s}.hero h1{animation-delay:.14s}.hero .sub{animation-delay:.26s}.hero .statband{animation-delay:.38s}.hero .hero-ctas{animation-delay:.48s}.hero .tp{animation-delay:.56s}
+  .ask{opacity:0;animation:rise .9s ease .34s forwards}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+    .hero-video{display:none}
+    .hero{background:linear-gradient(165deg,var(--navy-ink) 0%,var(--navy) 60%,var(--navy-deep) 100%)}
+  }
+
+  @media(max-width:920px){
+    .hero .wrap{grid-template-columns:1fr;gap:42px}
+    .why .wrap{grid-template-columns:1fr;gap:38px}
+    .local .wrap{grid-template-columns:1fr;gap:30px}
+    .t-grid{grid-template-columns:1fr}
+    .team-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    .nav-phone span{display:none}
+    .logo-img{height:40px}
+    .statband{flex-wrap:wrap;max-width:none}
+    .stat-i{flex:1 1 45%;border-left:none!important;padding-left:0!important;border-bottom:1.5px solid var(--hair)}
+    .help-row{grid-template-columns:auto 1fr;gap:16px}
+    .help-row .go{display:none}
+    .help-row .ttl{font-size:1.3rem}
+    .why-points{grid-template-columns:1fr}
+    .team-grid{grid-template-columns:1fr}
+    .wp{padding:22px 0!important;border-left:none!important}
+    .block{padding:var(--space-section-sm) 0}.hero{padding:44px 0 60px}
+    .final .inner{padding:48px 24px}
+    .foot-top{flex-direction:column}
+    .foot-contact{text-align:left}
+    .sticky-mobile{display:flex}body{padding-bottom:56px}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" aria-label="Aronov Law NY P.C. home">
+      <img class="logo-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/J2SVmxPF3wIhn8Y7VroP/media/67c4cb7933e8ff06820e1b05.webp" alt="Aronov Law NY P.C.">
+    </a>
+    <div class="nav-right">
+      <a href="tel:+17182061555" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(718) 206-1555</span>
+      </a>
+      <a href="#consult" class="btn btn-gold" style="padding:12px 22px;font-size:.96rem">Free Consultation</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg" aria-hidden="true">
+    <source src="hero-loop.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="pill"><span class="dot" aria-hidden="true"></span> Queens &amp; New York Divorce Attorneys</span>
+      <h1 id="hero-title">The divorce firm focused on <em>you.</em></h1>
+      <p class="sub">Experienced, dedicated representation through every step of your divorce. <b>You're never left wondering what's next.</b></p>
+      <ul class="statband">
+        <li class="stat-i"><span class="v">1,000<sup>+</sup></span><span class="k">Cases won</span></li>
+        <li class="stat-i"><span class="v">25<sup>+</sup></span><span class="k">Years experience</span></li>
+        <li class="stat-i"><span class="v">5.0<span class="star" aria-hidden="true">★</span></span><span class="k">Client rating</span></li>
+      </ul>
+      <div class="hero-ctas">
+        <a href="#consult" class="btn btn-gold">Get started — it's free →</a>
+        <a href="tel:+17182061555" class="btn btn-soft">Call (718) 206-1555</a>
+      </div>
+      <p class="tp"><span class="stars" aria-hidden="true">★★★★★</span> <b>5.0</b> rated by 200+ New York clients</p>
+    </div>
+
+    <!-- FORM -->
+    <form class="ask" id="consult" aria-labelledby="form-title" novalidate>
+      <fieldset class="ask-legend">
+        <legend>
+          <b id="form-title">Tell us about your case</b>
+          <small>Free &amp; 100% confidential — no obligation</small>
+        </legend>
+      </fieldset>
+      <p class="lead-q">Share a few details and an experienced NY divorce attorney will reach out, usually within minutes.</p>
+      <p class="req-note"><span class="star" aria-hidden="true">*</span> indicates a required field</p>
+
+      <div class="field">
+        <label for="name">Full name <span class="star" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <p class="error" id="name-error" hidden>Please enter your name.</p>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number <span class="star" aria-hidden="true">*</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(___) ___-____" required aria-describedby="phone-hint">
+        <p class="hint" id="phone-hint">We'll call you back the same day.</p>
+        <p class="error" id="phone-error" hidden>Please enter a valid phone number.</p>
+      </div>
+
+      <div class="field">
+        <label for="matter">What do you need help with? <span class="star" aria-hidden="true">*</span></label>
+        <select id="matter" name="matter" required>
+          <option value="" disabled selected>Select your matter…</option>
+          <option>Contested Divorce</option>
+          <option>Uncontested Divorce</option>
+          <option>Child Custody &amp; Support</option>
+          <option>Spousal Support / Alimony</option>
+          <option>Property &amp; Asset Division</option>
+          <option>Other Family Law Matter</option>
+        </select>
+        <p class="error" id="matter-error" hidden>Please choose how we can help.</p>
+      </div>
+
+      <div class="consent-group">
+        <div class="consent">
+          <input type="checkbox" id="consent-info" name="consent_informational" checked>
+          <label for="consent-info">I agree to receive informational and account-related communications (e.g., appointment confirmations, reminders, account updates, and customer support) from Robert Aronov &amp; Associates via text, call, or email. Message frequency varies. Message &amp; data rates may apply. Reply STOP to opt out.</label>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="consent-marketing" name="consent_marketing" checked>
+          <label for="consent-marketing">I agree to receive marketing and promotional messages from Robert Aronov &amp; Associates via text, call, or email. Consent is not a condition of purchase. Message frequency varies. Message &amp; data rates may apply. Reply STOP to opt out.</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-block">Get my free case review →</button>
+
+      <p class="ask-foot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Your information is private &amp; secure
+      </p>
+      <p class="visually-hidden" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Professional memberships and ratings">
+  <div class="wrap">
+    <span class="trust-label">Recognized &amp; rated by</span>
+    <div class="trust-logos">
+      <img src="bar-nassau.png" alt="Nassau County Bar Association">
+      <img src="bar-nysba.png" alt="New York State Bar Association">
+      <img src="bar-aba.png" alt="American Bar Association">
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE HELP -->
+<section class="block" aria-labelledby="help-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-tag">How We Help</p>
+      <h2 id="help-title">Whatever your situation, <em>we're here.</em></h2>
+    </div>
+    <ol class="help-list reveal">
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Contested Divorce</a><span>When you can't agree — we fight for your rights.</span></span>
+        <span class="go" aria-hidden="true">Discuss my case →</span>
+      </li>
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Uncontested Divorce</a><span>Fast, affordable, handled correctly.</span></span>
+        <span class="go" aria-hidden="true">Get started →</span>
+      </li>
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Child Custody &amp; Support</a><span>Your children's wellbeing comes first.</span></span>
+        <span class="go" aria-hidden="true">Talk to an attorney →</span>
+      </li>
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Spousal Support &amp; Alimony</a><span>A fair outcome that reflects reality.</span></span>
+        <span class="go" aria-hidden="true">Review my options →</span>
+      </li>
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Property &amp; Asset Division</a><span>Keep your fair share of what you built.</span></span>
+        <span class="go" aria-hidden="true">Protect my assets →</span>
+      </li>
+      <li class="help-row">
+        <span class="idx" aria-hidden="true"></span>
+        <span class="ttl"><a href="#consult" class="stretched">Prenups &amp; Family Law</a><span>One trusted firm for every chapter.</span></span>
+        <span class="go" aria-hidden="true">Ask us →</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="block why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div>
+      <p class="sec-tag">Why Aronov Law</p>
+      <h2 id="why-title">A firm that puts <em>you first</em> — start to finish.</h2>
+      <p class="lede">For over 25 years, we've guided New Yorkers through their hardest moments with the legal prowess, and the patience, to get it right.</p>
+      <a href="#consult" class="btn btn-gold">Claim my free consultation →</a>
+    </div>
+    <ul class="why-points">
+      <li class="wp"><span class="n" aria-hidden="true">i.</span><h3>Aggressive advocacy</h3><p>We push hard in and out of the courtroom — never settling for less than you deserve.</p></li>
+      <li class="wp"><span class="n" aria-hidden="true">ii.</span><h3>Clear, flat pricing</h3><p>No surprise hourly invoices. Know exactly what to expect from day one.</p></li>
+      <li class="wp"><span class="n" aria-hidden="true">iii.</span><h3>Same-day callbacks</h3><p>Reach out and get a direct line to your attorney — we respond fast.</p></li>
+      <li class="wp"><span class="n" aria-hidden="true">iv.</span><h3>Se habla español</h3><p>Bilingual guidance for New York's diverse communities.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MEET THE TEAM -->
+<section class="block tband" aria-labelledby="team-title">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="sec-tag">Meet the Team</p>
+      <h2 id="team-title">The people in <em>your corner.</em></h2>
+    </div>
+    <ul class="team-grid">
+      <li>
+        <article class="member">
+          <div class="photo">
+            <img src="robert.jpg" alt="Robert Aronov, Founding Attorney" loading="lazy">
+          </div>
+          <div class="meta">
+            <h3>Robert Aronov</h3>
+            <p class="role">Founding Attorney</p>
+            <p class="bio">Leads the firm's divorce and family law practice with a relentless, client-first approach.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="member">
+          <div class="photo">
+            <img src="mike.jpg" alt="Mike, Senior Family Law Attorney" loading="lazy">
+          </div>
+          <div class="meta">
+            <h3>Mike</h3>
+            <p class="role">Senior Family Law Attorney</p>
+            <p class="bio">Guides clients through contested divorce and custody matters with steady, strategic counsel.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="member">
+          <div class="photo">
+            <img src="ala.jpg" alt="Ala, Family Law Attorney" loading="lazy">
+          </div>
+          <div class="meta">
+            <h3>Ala</h3>
+            <p class="role">Family Law Attorney</p>
+            <p class="bio">Advocates for fair outcomes on support, alimony, and asset division with care and precision.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="member">
+          <div class="photo">
+            <img src="john.jpg" alt="John, Client Relations Manager" loading="lazy">
+          </div>
+          <div class="meta">
+            <h3>John</h3>
+            <p class="role">Client Relations Manager</p>
+            <p class="bio">Your first point of contact — making sure every question gets a fast, clear answer.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- LOCALIZATION / NAP -->
+<section class="block local" aria-labelledby="local-title">
+  <div class="wrap">
+    <div class="map-embed">
+      <iframe
+        title="Map showing Aronov Law NY P.C. office location in Queens, New York"
+        src="https://www.google.com/maps?q=88-02+136th+St,+Jamaica,+NY+11418&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="nap">
+      <p class="sec-tag">Serving New York</p>
+      <h2 id="local-title">Local attorneys, <em>right in Queens.</em></h2>
+      <p class="served">Proudly representing Jamaica, Rego Park, Forest Hills, Flushing, Kew Gardens &amp; all five boroughs.</p>
+      <address>
+        <dl class="nap-rows">
+          <div class="nap-row">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div>
+              <dt>Office</dt>
+              <dd>Aronov Law NY P.C.<small>88-02 136th St, Jamaica, NY 11418</small></dd>
+            </div>
+          </div>
+          <div class="nap-row">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+17182061555">(718) 206-1555</a><small>Se habla español</small></dd>
+            </div>
+          </div>
+          <div class="nap-row">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <dt>Hours</dt>
+              <dd><time>Mon – Fri: 9:00 AM – 6:00 PM</time><small>Saturday &amp; Sunday: Closed</small></dd>
+            </div>
+          </div>
+        </dl>
+      </address>
+      <div class="nap-cta">
+        <a href="#consult" class="btn btn-gold">Book a free consult →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="block tband" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="sec-tag">Loved by New Yorkers</p>
+      <h2 id="reviews-title">Trusted when it <em>matters most.</em></h2>
+    </div>
+    <ul class="t-grid">
+      <li>
+        <figure class="tcard">
+          <span class="qmark" aria-hidden="true">"</span>
+          <p class="stars" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span></p>
+          <h3>Simple &amp; stress-free</h3>
+          <blockquote cite="https://www.google.com/maps/place/Real+Estate+Lawyer+Queens+Aronov+Law+NY+P.C.">They made the whole process simple and stress-free, and were always there when we needed them.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">N</span><span><b>Nelly C.</b><small>Verified Google Review</small></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="tcard">
+          <span class="qmark" aria-hidden="true">"</span>
+          <p class="stars" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span></p>
+          <h3>Always in safe hands</h3>
+          <blockquote cite="https://www.google.com/maps/place/Real+Estate+Lawyer+Queens+Aronov+Law+NY+P.C.">Clear communication and a client-centered approach. I felt I was in safe hands the whole way through.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">J</span><span><b>Jeremiah K.</b><small>Verified Google Review</small></span></figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="tcard">
+          <span class="qmark" aria-hidden="true">"</span>
+          <p class="stars" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span></p>
+          <h3>Real effort, real results</h3>
+          <blockquote cite="https://www.google.com/maps/place/Real+Estate+Lawyer+Queens+Aronov+Law+NY+P.C.">Most lawyers won't put in the effort this firm did. They made a difficult divorce so much easier.</blockquote>
+          <figcaption><span class="av" aria-hidden="true">M</span><span><b>Melissa M.</b><small>Verified Google Review</small></span></figcaption>
+        </figure>
+      </li>
+    </ul>
+    <p class="review-link-wrap">
+      <a class="review-link" href="https://www.google.com/maps/place/Real+Estate+Lawyer+Queens+Aronov+Law+NY+P.C./@40.7037306,-73.818374,17z/data=!3m1!4b1!4m6!3m5!1s0x89c260559f31b64f:0xb00afea132c5d87b!8m2!3d40.7037306!4d-73.818374!16s%2Fg%2F1tdqpkv1" target="_blank" rel="noopener">Read all reviews on Google →</a>
+    </p>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="block final" aria-labelledby="final-title">
+  <div class="wrap">
+    <div class="inner">
+      <h2 id="final-title">Quality legal help for <em>life's hardest moments.</em></h2>
+      <div class="final-ctas">
+        <a href="#consult" class="btn btn-gold">Get my free case review →</a>
+        <a href="tel:+17182061555" class="btn btn-ghost">Call (718) 206-1555</a>
+      </div>
+      <ul class="reassure">
+        <li>Free consultation</li>
+        <li>Se habla español</li>
+        <li>Same-day callbacks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="foot-logo-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/J2SVmxPF3wIhn8Y7VroP/media/67c4cb7933e8ff06820e1b05.webp" alt="Aronov Law NY P.C.">
+        <p>New York Divorce &amp; Family Law Attorneys</p>
+      </div>
+      <address class="foot-contact">
+        <a href="tel:+17182061555" class="foot-phone">(718) 206-1555</a>
+        <p>88-02 136th St, Jamaica, NY 11418 · Same-day callbacks</p>
+      </address>
+    </div>
+    <div class="disclaimer">
+      <p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p>
+      <p>The information on this website is for informational and educational purposes only and should not be considered professional legal advice.</p>
+      <p>© 2026 Aronov Law NY P.C. Submitting information via any form does not create an attorney-client relationship.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-mobile">
+  <a href="tel:+17182061555" class="s-call">Call now</a>
+  <a href="#consult" class="s-form">Free case review →</a>
+</div>
+
+<script>
+  /* === CONFIG: paste your GHL Inbound Webhook URL here === */
+  const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/REPLACE_ME/webhook-trigger/REPLACE_ME';
+
+  const header = document.getElementById('site-header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 20));
+
+  const io = new IntersectionObserver(es => es.forEach(x => {
+    if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); }
+  }), { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const phone = document.getElementById('phone');
+  phone.addEventListener('input', e => {
+    let v = e.target.value.replace(/\D/g, '').slice(0, 10);
+    if (v.length > 6) v = `(${v.slice(0,3)}) ${v.slice(3,6)}-${v.slice(6)}`;
+    else if (v.length > 3) v = `(${v.slice(0,3)}) ${v.slice(3)}`;
+    else if (v.length > 0) v = `(${v}`;
+    e.target.value = v;
+  });
+
+  const form = document.getElementById('consult');
+  const status = document.getElementById('form-status');
+
+  // Make every CTA pointing at #consult focus the first field after the jump
+  document.querySelectorAll('a[href="#consult"]').forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(() => {
+        const nameField = document.getElementById('name');
+        if (nameField) nameField.focus({ preventScroll: true });
+      }, 500);
+    });
+  });
+
+  function setError(id, show) {
+    const field = document.getElementById(id);
+    const err = document.getElementById(id + '-error');
+    field.setAttribute('aria-invalid', show ? 'true' : 'false');
+    if (err) {
+      err.hidden = !show;
+      const describedby = (field.getAttribute('aria-describedby') || '').split(' ').filter(Boolean);
+      const errId = id + '-error';
+      if (show && !describedby.includes(errId)) describedby.push(errId);
+      if (!show) { const i = describedby.indexOf(errId); if (i > -1) describedby.splice(i, 1); }
+      field.setAttribute('aria-describedby', describedby.join(' '));
+    }
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const name = document.getElementById('name');
+    const matter = document.getElementById('matter');
+    const phoneDigits = phone.value.replace(/\D/g, '');
+
+    let ok = true;
+    setError('name', false); setError('phone', false); setError('matter', false);
+    if (!name.value.trim()) { setError('name', true); ok = false; }
+    if (phoneDigits.length < 10) { setError('phone', true); ok = false; }
+    if (!matter.value) { setError('matter', true); ok = false; }
+    if (!ok) {
+      status.textContent = 'Please fix the highlighted fields.';
+      form.querySelector('[aria-invalid="true"]').focus();
+      return;
+    }
+
+    const btn = form.querySelector('button[type=submit]');
+    btn.textContent = 'Sending…'; btn.style.opacity = .7; btn.disabled = true;
+    status.textContent = 'Sending your details…';
+
+    const payload = {
+      full_name: name.value.trim(),
+      phone: phone.value.trim(),
+      matter: matter.value,
+      consent_informational: document.getElementById('consent-info').checked,
+      consent_marketing: document.getElementById('consent-marketing').checked,
+      source: 'aronovlaw-paid-landing',
+      page_url: location.href,
+      submitted_at: new Date().toISOString()
+    };
+
+    try {
+      await fetch(GHL_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.error('Lead submit error:', err);
+    }
+
+    form.innerHTML = '<div style="text-align:center;padding:18px 0">'
+      + '<div style="font-size:2.4rem" aria-hidden="true">✓</div>'
+      + '<h2 style="font-family:var(--display);color:var(--navy);margin:8px 0;font-weight:600">Thank you!</h2>'
+      + '<p style="color:var(--slate)">An attorney will reach out shortly. Need help now? Call <a href="tel:+17182061555"><b>(718) 206-1555</b></a>.</p>'
+      + '</div>';
+    document.getElementById('main-content').setAttribute('aria-live', 'polite');
+  });
+</script>
+</body>
+</html>
